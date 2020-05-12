@@ -35,10 +35,10 @@ sudo apt-get install -y kubectl
 ```bash
 kubectl cluster-info
 ```
-> If you see a message similar to the following, kubectl is not configured correctly or is not able to connect to a Kubernetes cluster.
+- If you see a message similar to the following, kubectl is not configured correctly or is not able to connect to a Kubernetes cluster.
 
-> output: The connection to the server <server-name:port> was refused - did you specify the right host or port?
-
+>   output: The connection to the server <server-name:port> was refused - did you specify the right host or port?
+<hr/>
 #### Optional, enabling shell autocompletion
 ##### The completion script depends on bash-completion, which means that you have to install this software first:
 1. Install bash-completion
@@ -64,6 +64,6 @@ echo 'source <(kubectl completion bash)' >>~/.bashrc
 echo 'alias k=kubectl' >>~/.bashrc
 echo 'complete -F __start_kubectl k' >>~/.bashrc
 ```
-<br/>
-<hr/><img src="kubectl_autocompletion.gif" />
+<img src="kubectl_autocompletion.gif" />
+<hr/>
 
