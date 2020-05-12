@@ -78,7 +78,6 @@ For installation instructions see [installing kubectl](https://github.com/genral
 - Examples: Common operations
 
 <br/>
-<br/>
 
 #### Syntax
 1. Use the following syntax to run kubectl commands from your terminal window:
@@ -92,13 +91,13 @@ where `command`, `TYPE`, `NAME`, and `flags` are:
 - flags: Specifies optional flags. For example, you can use the -s or --server flags to specify the address and port of the Kubernetes API serve
 > If you need help, just run kubectl help from the terminal window.
 
+<br/>
 
 #### Operations:
 For more about command operations, see the [kubectl](https://kubernetes.io/docs/user-guide/kubectl) reference documentation.
 The following table includes  most popular operations:
 <img src="images/Operations.png" />
 
-<br/>
 <br/>
 
 #### Resources:
@@ -203,7 +202,6 @@ cat service.yaml | kubectl diff -f -
 ```
 
 <br/>
-
 
 #### What's next
  Create a k8s cluster on your laptop by use any one of following:
