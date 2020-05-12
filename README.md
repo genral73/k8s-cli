@@ -1,4 +1,4 @@
-# Install, Set Up and Overview kubectl
+# Install, Setup and Overview kubectl
 ## Install kubectl on Linux
 #### Install kubectl binary with curl on Linux
 1. Download the latest release with the command, for example, to download version v1.18.0 on Linux, type:
@@ -39,7 +39,8 @@ kubectl cluster-info
 
 >   output: The connection to the server <server-name:port> was refused - did you specify the right host or port?
 <hr/>
-#### Optional, enabling shell autocompletion
+
+#### Enabling shell autocompletion
 ##### The completion script depends on bash-completion, which means that you have to install this software first:
 1. Install bash-completion
 ```bash
