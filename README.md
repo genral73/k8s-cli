@@ -39,7 +39,6 @@ kubectl cluster-info
 
 > output: The connection to the server <server-name:port> was refused - did you specify the right host or port?
 
-<br/>
 #### Optional, enabling shell autocompletion
 ##### The completion script depends on bash-completion, which means that you have to install this software first:
 1. Install bash-completion
