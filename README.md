@@ -77,6 +77,9 @@ For installation instructions see [installing kubectl](https://github.com/genral
 - Output Formatting options
 - Examples: Common operations
 
+<br/>
+<br/>
+
 #### Syntax
 1. Use the following syntax to run kubectl commands from your terminal window:
 ```bash
@@ -94,14 +97,14 @@ where `command`, `TYPE`, `NAME`, and `flags` are:
 For more about command operations, see the [kubectl](https://kubernetes.io/docs/user-guide/kubectl) reference documentation.
 The following table includes  most popular operations:
 <img src="images/Operations.png" />
-<hr/>
 
+<br/>
+<br/>
 
 #### Resources:
 For more about command resources, see the [kubectl](https://kubernetes.io/docs/user-guide/kubectl) reference documentation.
 The following table includes  most popular resources:
 <img src="images/Resources.png" />
-<hr/>
 
 #### Output Formatting options
 Use the following sections for information about how you can format or sort the output of certain commands.
@@ -116,7 +119,8 @@ kubectl get pod web-pod-13je7 -o custom-columns=NAME:.metadata.name,RSRC:.metada
 kubectl get pod web-pod-13je7 -o yaml 
 kubectl get pods --sort-by=.metadata.name
 ```
-<hr/>
+
+<br/>
 
 #### Examples: Common operations
 1. kubectl get - List one or more resources
@@ -197,6 +201,8 @@ kubectl diff -f pod.json
 # Diff file read from stdin.
 cat service.yaml | kubectl diff -f -
 ```
+
+<br/>
 
 
 #### What's next
