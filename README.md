@@ -68,3 +68,53 @@ echo 'complete -F __start_kubectl k' >>~/.bashrc
 <img src="kubectl_autocompletion.gif" />
 <hr/>
 
+## Overview of kubectl
+This overview covers kubectl syntax, describes the command operations, and provides common example.
+For installation instructions see [installing kubectl](https://github.com/genral73/k8s-cli#install-kubectl-on-linux).
+- Syntax
+- Operations
+- Resource types
+- Output options
+- Examples: Common operations
+
+#### Syntax
+1. Use the following syntax to run kubectl commands from your terminal window:
+```bash
+kubectl [command] [TYPE] [NAME] [flags]
+```
+where `command`, `TYPE`, `NAME`, and `flags` are:
+- command: Specifies the operation that you want to perform on resources, for example `create`, `get`, `describe`, `delete`.
+- TYPE: Specifies the resource type, and it are case-insensitive, for exmaple `pods`, `configmaps`, `services`, `nodes`.
+- NAME: Specifies the name of the resource, and it are case-sensitive, for exmaple `my-nginx-pod`, `dev-apache-pod`.
+- flags: Specifies optional flags. For example, you can use the -s or --server flags to specify the address and port of the Kubernetes API serve
+> If you need help, just run kubectl help from the terminal window.
+
+
+#### The following is the most popular Operations:
+<img src="images/Operations.png" />
+- Remember: For more about command operations, see the [kubectl](https://kubernetes.io/docs/user-guide/kubectl) reference documentation.
+<hr/>
+
+
+#### The following is the most popular Resource types:
+<img src="images/Resources.png" />
+- Remember: For more about command operations, see the [kubectl](https://kubernetes.io/docs/user-guide/kubectl) reference documentation.
+<hr/>
+
+#### Output Formatting options
+Use the following sections for information about how you can format or sort the output of certain commands.
+The default output format for all kubectl commands is the human readable plain-text format, you can add either the -o or --output flags like:
+```bash
+kubectl [command] [TYPE] [NAME] -o <output_format>
+```
+Examples:
+```bash
+kubectl get pod web-pod-13je7 -o yaml
+kubectl get pod web-pod-13je7 -o custom-columns=NAME:.metadata.name,RSRC:.metadata.resourceVersion
+kubectl get pod web-pod-13je7 -o yaml 
+kubectl get pods --sort-by=.metadata.name
+```
+<hr/>
+
+#### What's next
+Start using the [kubectl] commands.
