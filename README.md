@@ -52,7 +52,7 @@ source /usr/share/bash-completion/bash_completion
 ```
 3. Reload your shell and verify that bash-completion is correctly installed by typing type:
 ```bash
-type _init_completion
+type _init_completion .
 ```
 
 ##### You now need to ensure that the kubectl completion script gets sourced in all your shell sessions:
