@@ -202,8 +202,11 @@ cat service.yaml | kubectl diff -f -
 ```
 
 <br/>
+
 #### Additional Tips
+
 1. Install zsh and Oh-My-Zsh
+
 ```bash
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -211,12 +214,16 @@ echo 'source <(kubectl completion zsh)' >>~/.zshrc
 echo 'alias k=kubectl' >>~/.zshrc
 echo 'complete -F __start_kubectl k' >>~/.zshrc
 ```
+
 2. Install kubectx + kubens: Power tools for kubectl
+
 ```bash
 sudo apt install kubectx
 echo 'alias kns=kubens' >>~/.zshrc
 ```
+
 3. Install kube-ps1: Kubernetes prompt for bash and zsh
+
 ```bash
 wget https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh -O ~/.kube-ps1.sh
 echo '~/.kube-ps1.sh' >> ~/.zshrc
